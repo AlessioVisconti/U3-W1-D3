@@ -14,7 +14,7 @@ function App() {
       <Welcome />
       {/* <AllTheBooks /> */}
       {/*Cambiando la variabile libri cambiamo anche quello che viene mostrato, provare qualche modo con i button*/}
-      <BookList bookArray={LibriHistory} />
+      <BookList bookArray={LibriHorror} />
     </>
   );
 }

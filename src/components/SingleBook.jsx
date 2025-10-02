@@ -7,11 +7,11 @@ class SingleBook extends Component {
   };
 
   render() {
-    const { bookObj } = this.props; // in prtica quando scriviamo bookObj è come se scrivessimo this.props(this.props ha iniziato a confondere)
+    const { bookObj } = this.props; // in prtica quando scriviamo bookObj è come se scrivessimo this.props(this.props ha iniziato a confondere)... ti precludi cose così
 
     return (
       <Card
-        className={"h-100 d-flex flex-column " + (this.state.selected ? "border border-danger" : "")}
+        className={"h-100 d-flex flex-column " + (this.state.selected ? " border-danger" : "")}
         onClick={() => this.setState({ selected: !this.state.selected })}
       >
         <Card.Img variant="top" src={bookObj.img} />
